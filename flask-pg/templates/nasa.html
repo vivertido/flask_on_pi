@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css" />
+    
+  </head>
+  <body>
+	  <div class="container">
+	  
+		<h1>NASA Astronomy Picture of the Day</h1>
+		<div class="data-results">
+			
+		
+			<h3>{{data['title']}}</h3>
+			
+			{% if data['media_type'] == "video" %}
+			
+			<iframe width="420" height="315"
+				src="{{data['url']}}">
+			</iframe>
+			
+			{% else %}
+			
+			<img class="aotd-img" src="{{data['url']}}">
+			
+			
+			
+			{% endif %}
+			
+			
+			
+			<p>{{data['explanation']}}</p>
+			
+			
+			
+		</div>
+		
+	  
+	  
+	  </div>
+	  
+
+  
+  </body>
+</html>
