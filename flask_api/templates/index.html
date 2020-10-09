@@ -4,7 +4,23 @@
 <body>
 
 <h1>Hello {{name}} </h1>
-<h3>Welcome to the site </h3>
+<h3>API Documentation </h3>
+<hr/>
+<p>This API contains Code Next coaches' favorite albums. See the useage below.</p>
+<h3>All Albums</h3>
+<p>endpoint: /api/v1/albums/all</p>
+<p>returns all albums</p>
+<h3>Search</h3>
+<p>Search for albums by year, artist and song.</p>
+<p>endpoint: /api/v1/albums/search</p>
+<p>optional parameters: </p>
+<ul>
+<li>artist: /api/v1/albums/search?artist=Prince </li>
+<li>year: /api/v1/albums/search?year=2019</li>
+<li>song. Will return a whole album if a song matches the string in the query. /api/v1/albums/search?song=Tyrant</li>
+
+
+</ul>
 
 </body>
 
