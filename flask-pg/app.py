@@ -43,4 +43,4 @@ def info():
     return render_template('info.html', temp=temp, ipaddr=ipaddr, freemem=freemem, cpuinfo=cpuinfo, uptime=uptime)
 
 if __name__ == '__main__':
-    app.run( debug=True, host='0.0.0.0')
+    app.run( debug=True, host='0.0.0.0', port=2022)
